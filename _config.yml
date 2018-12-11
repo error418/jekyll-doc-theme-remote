@@ -15,6 +15,9 @@ git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
 # comment out this to use default Bootstrap
 bootwatch: paper
 
+blog:
+  enable: true
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

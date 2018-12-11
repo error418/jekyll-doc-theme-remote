@@ -31,6 +31,15 @@ body {
   margin-bottom: 46px;
 }
 
+img {
+  &.showcase {
+    border: 1px solid #ddd;
+    border-radius: 1em;
+    display: block;
+    margin: auto;
+  }
+}
+
 .navbar-brand{
   img{
     margin: -$navbar-padding-vertical 0;

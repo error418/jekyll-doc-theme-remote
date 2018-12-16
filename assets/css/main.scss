@@ -93,3 +93,30 @@ img {
 .navbar-form .has-feedback .form-control-feedback{
   top:10px
 }
+
+
+.doc-page-title {
+  margin-top: 0px;
+}
+
+$titleSize: 3em;
+
+h1 {
+  font-size: $titleSize;
+}
+
+h2 {
+  font-size: $titleSize - 0.5;
+}
+
+h3 {
+  font-size: $titleSize - 1;
+}
+
+h4 {
+  font-size: $titleSize - 1.5;
+}
+
+h5 {
+  font-size: $titleSize - 2;
+}

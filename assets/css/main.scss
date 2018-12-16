@@ -99,25 +99,22 @@ img {
   margin-top: 0px;
 }
 
-$minTitleSize: 1.25em;
-$titleSizeStep: 0.33;
-
 h1 {
-  font-size: $minTitleSize + $titleSizeStep * 4;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: $minTitleSize + $titleSizeStep * 3;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: $minTitleSize + $titleSizeStep * 2;
+  font-size: 1.5em;
 }
 
 h4 {
-  font-size: $minTitleSize + $titleSizeStep;
+  font-size: 1.25em;
 }
 
 h5 {
-  font-size: $minTitleSize;
+  font-size: 1.15em;
 }

@@ -23,6 +23,11 @@
                 {% if site.blog.enable == true %}
                     <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | prepend: site.baseurl }}">Blog</a></li>
                 {% endif %}
+                {% if site.nav %}
+                    {% for section in site.nav %}
+                        <li {% if page.sectionid==section.id %} class="active" {% endif %}><a href="{{ section.url | prepend: site.baseurl }}">{{ section.name }}</a></li>
+                    {% endfor %}
+                {% endif %}
             </ul>
             <div class="navbar-right">
                 <form class="navbar-form navbar-left">

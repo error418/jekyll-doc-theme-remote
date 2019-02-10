@@ -1,7 +1,7 @@
 $(function() {
 
-    // $('.collapse').collapse('hide');
-    $('.list-group-item.active').parent().parent('.collapse').collapse('show');
+    $('.docs-nav').find('.collapse').collapse('show');
+    // $('.list-group-item.active').parent().parent('.collapse').collapse('show');
 
 
     var pages = new Bloodhound({

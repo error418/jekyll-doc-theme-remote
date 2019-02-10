@@ -26,9 +26,11 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   padding-top: $navbar-height + $navbar-margin-bottom;
   margin-bottom: 46px;
+  font-size: 1.15em;
 }
 
 img {
@@ -116,5 +118,21 @@ h4 {
 }
 
 h5 {
-  font-size: 1.15em;
+  font-size: 1.2em;
+}
+
+.docs-nav {
+  .panel {
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+
+  .list-group-item {
+    padding: 0.5em 1.5em;
+  }
 }

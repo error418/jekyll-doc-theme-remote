@@ -2,9 +2,7 @@
 
 $(function() {
 
-    $('.docs-nav').find('.collapse').collapse('show');
-    // $('.list-group-item.active').parent().parent('.collapse').collapse('show');
-
+    $('.list-group-item.active').parent().parent().parent('.collapse').collapse('show');
 
     var pages = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),

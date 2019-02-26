@@ -1,3 +1,5 @@
+"use strict";
+
 $(function() {
 
     $('.docs-nav').find('.collapse').collapse('show');

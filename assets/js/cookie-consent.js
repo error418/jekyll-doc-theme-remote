@@ -33,6 +33,9 @@ window.addEventListener("load", function() {
       "background": "#4b81e8"
       }
     },
+    "cookie": {
+      "site": "{{ site.baseurl }}"
+    },
     "type": "opt-in",
     "content": {
       "message": "{{ site.optin.notice }}",

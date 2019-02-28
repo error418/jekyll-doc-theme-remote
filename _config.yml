@@ -18,6 +18,17 @@ bootwatch: paper
 blog:
   enable: true
 
+# cookies opt in
+optin:
+  notice: We are using Cookies and Google Analytics to make this website better
+  accept: Got it!
+  decline: Decline
+
+# google analytics config
+analytics:
+  enable: true
+  id: TEST
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

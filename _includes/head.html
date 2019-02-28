@@ -11,4 +11,16 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+
+    <script>
+    var googleAnalyticsId = undefined;
+    {% if site.analytics.enable -%}
+    googleAnalyticsId = "{{ site.analytics.id }}";
+    {%- endif %}
+    </script>
+    <script src="{{ "/assets/js/cookie-consent.js" | prepend: site.baseurl }}"></script>
 </head>

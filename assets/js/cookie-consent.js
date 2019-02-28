@@ -34,7 +34,7 @@ window.addEventListener("load", function() {
       }
     },
     "cookie": {
-      "site": "{{ site.baseurl }}"
+      "path": "{{ site.baseurl }}"
     },
     "type": "opt-in",
     "content": {

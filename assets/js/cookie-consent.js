@@ -24,6 +24,7 @@ if (document.cookie.split(';').filter(function(item) {
 
 window.addEventListener("load", function() {
   window.cookieconsent.initialise({
+    "animateRevokable": false,
     "palette": {
       "popup": {
       "background": "#edeff5",

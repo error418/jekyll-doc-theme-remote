@@ -27,11 +27,11 @@ window.addEventListener("load", function() {
     "animateRevokable": false,
     "palette": {
       "popup": {
-      "background": "#edeff5",
-      "text": "#838391"
+        "background": "#edeff5",
+        "text": "#838391"
       },
       "button": {
-      "background": "#4b81e8"
+        "background": "#4b81e8"
       }
     },
     "cookie": {
@@ -39,10 +39,10 @@ window.addEventListener("load", function() {
     },
     "type": "opt-in",
     "content": {
-      "message": "{{ site.optin.notice }}",
-      "dismiss": "{{ site.optin.decline }}",
-      "deny": "{{ site.optin.decline }}",
-      "allow": "{{ site.optin.accept }}",
+      "message": "{{ site.optin.notice | default: 'This site uses Cookies and Google Analytics to improve its usability' }}",
+      "dismiss": "{{ site.optin.decline | default: 'Decline' }}",
+      "deny": "{{ site.optin.decline | default: 'Decline' }}",
+      "allow": "{{ site.optin.accept | default: 'Got it!' }}",
       "link": "Learn more"
     },
     "onStatusChange": function(status, chosenBefore) {

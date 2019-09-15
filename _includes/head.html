@@ -16,6 +16,10 @@
         <link rel="stylesheet" href="{{ css | prepend: site.baseurl }}">
     {%- endfor -%}
     {%- endif %}
+  
+    {% if site.head.include -%}
+        {% include {{ site.head.include }} %}
+    {%- endif %}
 
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" integrity="sha384-AJ82o1PQz2xMlVWjJ+IdPSfyCVS/nJeYbLcpPhm/cEPrewaEdaYkaG6LCsquvogf" crossorigin="anonymous"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" integrity="sha384-l+e8/kt7mRYg7RUc/i3MsNwDJlWxkWkFDX10LF/iNglZLT96GBMAPrbaH2GP2lQy" crossorigin="anonymous"></script>

@@ -13,7 +13,7 @@
 
     {% if site.css.extra -%}
     {%- for css in site.css.extra -%}
-        <link rel="stylesheet" href="{{ css | prepend: site.baseurl }}">
+        <link defer rel="stylesheet" href="{{ css | prepend: site.baseurl }}">
     {%- endfor -%}
     {%- endif %}
   

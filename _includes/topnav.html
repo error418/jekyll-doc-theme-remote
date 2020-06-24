@@ -19,7 +19,6 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li {% if page.sectionid=='docs' %} class="active" {% endif %}><a href="{{ "/docs/home/" | prepend: site.baseurl }}">Docs</a></li>
                 {% if site.blog.enable == true %}
                     <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | prepend: site.baseurl }}">Blog</a></li>
                 {% endif %}
@@ -28,6 +27,7 @@
                         <li {% if page.sectionid==section.id %} class="active" {% endif %}><a href="{{ section.url | prepend: site.baseurl }}">{{ section.name }}</a></li>
                     {% endfor %}
                 {% endif %}
+                <li {% if page.sectionid=='docs' %} class="active" {% endif %}><a href="{{ "/docs/home/" | prepend: site.baseurl }}">Docs</a></li>
             </ul>
             <div class="navbar-right">
                 <form class="navbar-form navbar-left">

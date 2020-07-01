@@ -37,7 +37,10 @@
                     </div>
                 </form>
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ site.git_address }}"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    {%- if site.sponsor -%}
+                    <li><a href="https://github.com/sponsors/{{ site.sponsor }}" title="Sponsor this project"><i class="fa-fw far fa-heart" style="color:#ea4aaa"></i></a></li>
+                    {%- endif -%}
+                    <li><a href="{{ site.git_address }}" title="Github Repository"><i class="fab fa-github" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>

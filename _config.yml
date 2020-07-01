@@ -29,6 +29,20 @@ analytics:
   enable: true
   id: TEST
 
+sponsor:
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -38,12 +52,6 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - .idea/
-  - .gitignore
-  - README.md
 timezone: Europe/Berlin
 defaults:
 - scope:
